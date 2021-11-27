@@ -1,3 +1,4 @@
+/**
 package com.example.task_killer_api_m.services;
 
 
@@ -14,11 +15,11 @@ public class TaskService {
 
     @Autowired //
     TaskRepository taskRepository;
-    /**
+
     public ArrayList<Task> getTasks() {
         return (ArrayList<Task>) taskRepository.findAll();
     }
-
+    /**
     public ArrayList<Task> getTaskByList(Long id) { //devuelve las tareas pertenecientes a una lista, el id es de la lista
         ArrayList<Task>listTasks=new ArrayList<>();
         taskRepository.findAll().forEach(task->
@@ -29,7 +30,7 @@ public class TaskService {
                 }
         );
         return listTasks;
-    }**/
+    }//
 
     public Task saveTask (Task task){
         return taskRepository.save(task);
@@ -79,3 +80,4 @@ public class TaskService {
                 ).get();
     }
 }
+**/
