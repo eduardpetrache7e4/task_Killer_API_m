@@ -17,7 +17,7 @@ public class TaskController {
 
     @Autowired
     TaskService taskService;
-
+/**
     @GetMapping()  //http://localhost:8081/api/tasks/
     public ArrayList<Task> getUsers(){
         return taskService.getTasks();
@@ -27,7 +27,7 @@ public class TaskController {
     public Optional<Task> getUsersById(@PathVariable("id") Long id){
         return taskService.findById(id);
     }
-
+**/
 /**  @GetMapping("/list/{id}/task")
     public ArrayList<Task> getTaskByList(@PathVariable("id") Long id){
         return taskService.getTaskByList(id);

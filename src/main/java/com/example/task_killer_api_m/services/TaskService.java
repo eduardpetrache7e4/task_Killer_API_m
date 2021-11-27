@@ -14,12 +14,12 @@ public class TaskService {
 
     @Autowired //
     TaskRepository taskRepository;
-
+    /**
     public ArrayList<Task> getTasks() {
         return (ArrayList<Task>) taskRepository.findAll();
     }
 
-    /**public ArrayList<Task> getTaskByList(Long id) { //devuelve las tareas pertenecientes a una lista, el id es de la lista
+    public ArrayList<Task> getTaskByList(Long id) { //devuelve las tareas pertenecientes a una lista, el id es de la lista
         ArrayList<Task>listTasks=new ArrayList<>();
         taskRepository.findAll().forEach(task->
                 {
