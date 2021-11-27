@@ -1,4 +1,4 @@
-/**
+
 
 package com.example.task_killer_api_m.controllers;
 
@@ -33,7 +33,7 @@ public class TaskController {
 /**  @GetMapping("/list/{id}/task")
     public ArrayList<Task> getTaskByList(@PathVariable("id") Long id){
         return taskService.getTaskByList(id);
-    }//
+    }**/
 
 
 
@@ -73,4 +73,3 @@ public class TaskController {
     }
 
 }
-**/
